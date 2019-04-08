@@ -1,0 +1,63 @@
+#include <iostream> 
+#include <iomanip> 
+
+using namespace std; 
+
+int main()
+{
+/* 
+conversion equations for reference
+C = (F - 32) * 5/9 
+F = (C * 9/5) + 32
+*/
+
+double high = 0; 
+double low = 0; 
+
+double fdeg = 0; 
+double cdeg = 0; 
+
+char convertCase; 
+bool isFarenheit; 
+
+cout << "This program converts temperature measurements between farenheit and celcius. Given a high and low limit, the program will output" /n;
+cout << "all values within the specified limits." << endl;
+
+cout << "Please enter 'F' to convert from Farenheit to celcius, or enter 'C' to convert from Celcius to Farenheit: ";
+cin.get() >> convertCase; 
+
+sentinel = 0;
+while (sentinel < = 0)
+{
+  if (convertCase == "F")
+    {  isFarenheit = true;
+       sentinel++; 
+    else
+        if (convertCase == "C")
+        isFarenheit = false; 
+        sentinel++; 
+    else
+        cout << "Invalid input" << endl;
+    }
+}
+
+while (!isFarenheit)
+{
+  cout << "Please enter a low Celcius limit: "; 
+  cin >> low >> endl; 
+  cout << "Please enter a high celcius limit: "; 
+  cin >> high >> endl; 
+}
+
+counter = low; 
+while (counter <= high && counter >= low)
+{
+  counter = cdeg; 
+  cdeg = (fdeg - 32) * 5/9;
+  
+  cout << setprecision(3) << low << "Degrees Celcius = " << counter << " degrees Farenheit." << endl; 
+  
+  counter++;  
+ }
+
+
